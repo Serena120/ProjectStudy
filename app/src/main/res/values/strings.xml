@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">FinalProjectStudyApp</string>
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="_25_00">25:00</string>
+    <string name="session_count">%d</string>
+    <string name="start">Start</string>
+    <string name="reset">Reset</string>
+    <string name="total_time_format">%s</string>
+
+    <string name="introduction">ProjectStudy is your all-in-one solution for efficient and organized studying. ProjectStudy is designed to simplify your academic life, helping you manage tasks, assignments, notes, and schedules, with ease. Our app is designed to make your study journey efficient and enjoyable.</string>
+    <string name="getting_started">getting started</string>
+    <string name="FAQ1">We take security seriously. Your data is encrypted, and we follow best practices to protect your information. For more details, please refer to our Privacy policy</string>
+    <string name="FAQ2">Yes, Project Study supports multi-device usage. Simply log in with the same account on different devices to sync your data.</string>
+    <string name="FAQ3">The Pomodoro timer is a productivity tool that helps you manage your study sessions effectively. It consists of focused work intervals (Pomodoros) followed by short breaks.</string>
+    <string name="FAQ4">For support or inquiries, you can contact us at projectstudysupport@gmail.com. we are here to help!</string>
+    <string name="privacy_policy_text0">This Privacy Policy describes how Project Study collects, uses, and shares information when you use our application. \nBy using the App, you agree to the terms and conditions of this Privacy Policy.</string>
+    <string name="privacy_policy_text1">When you create an account, we collect your email address and password. We collect information about how you interact with the App, including the features you use and the actions you take.</string>
+    <string name="privacy_policy_text2">We use your information to provide you with access to and use of the App. We may use analytics tools to analyze usage patterns and improve the App</string>
+    <string name="privacy_policy_text3.1">We may share your information with third-party service providers who help us operate and improve the App.</string>
+    <string name="privacy_policy_text3.2">We may disclose your information as required by law or to protect our rights.</string>
+    <string name="privacy_policy_text4">We take reasonable measures to protect your information, but no method of transmission over the internet or electronic storage is entirely secure.</string>
+    <string name="privacy_policy_text5">We may update this Privacy Policy to reflect changes in our practices. Check the policy periodically for updates.</string>
+    <string name="privacy_policy_text6">If you have questions about this Privacy Policy, please contact us at contactprojectstudy@gmail.com.</string>
+    <string name="feedback_text">We value your feedback! If you have any suggestions, find a bug, or just want to share your thoughts on how we can improve Project Study, please feel free to reach out to us. Your input is essential in making our app better. \nSend us an email at:</string>
+    <string name="feedback_text1">We appreciate detailed information about any issues you encounter or suggestions you have.</string>
+    <string name="sessions">Total Sessions:</string>
+    <string name="no_pdf_file_selected_yet">No file Selected</string>
+    <string name="save_assignment">Save Assignment</string>
+    <string name="event">event</string>
+</resources>

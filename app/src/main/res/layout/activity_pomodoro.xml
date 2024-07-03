@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PomodoroActivity"
+    android:background="@color/Dawn"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/sessionCard"
+        android:layout_width="335dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/porcelain"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="5dp"
+        android:foreground="@drawable/custom_card2">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/sessionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/playfair_display"
+                android:text="@string/sessions"
+                android:textColor="@color/midnight"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_centerInParent="true" />
+
+            <TextView
+                android:id="@+id/sessionCountText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/session_count"
+                android:textSize="40dp"
+                android:padding="10dp"
+                android:fontFamily="@font/quattrocento_sans_regular"
+                android:textAlignment="center"
+                android:textColor="@color/midnight"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/FocusCard"
+        android:layout_width="335dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/china"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="5dp"
+        android:foreground="@drawable/custom_card2">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/focusText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/playfair_display"
+                android:text="Total Time:"
+                android:textColor="@color/seaShell"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                />
+
+            <TextView
+                android:id="@+id/totalText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total_time_format"
+                android:textSize="40sp"
+                android:padding="10dp"
+                android:fontFamily="@font/quattrocento_sans_regular"
+                android:textAlignment="center"
+                android:textColor="@color/seaShell"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/TimeCard"
+        android:layout_width="335dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/porcelain"
+        android:elevation="12dp"
+        app:cardCornerRadius="5dp"
+        android:foreground="@drawable/custom_card2"
+        android:layout_below="@+id/FocusCard"
+        >
+        <TextView
+            android:id="@+id/timerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:fontFamily="@font/quattrocento_sans_regular"
+            android:text="@string/_25_00"
+            android:textColor="@color/midnight"
+            android:textSize="70sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        app:cardBackgroundColor="@color/Dawn"
+        android:layout_gravity="center"
+        app:cardElevation="0dp"
+        android:layout_marginTop="6dp"
+        >
+        <TextView
+            android:id="@+id/breakText"
+            android:padding="10dp"
+            android:layout_width="335dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:text="hey! That's your 25 minutes,\n take a break :)"
+            android:textSize="18sp"
+            android:textColor="@color/midnight"
+            android:fontFamily="@font/quattrocento_sans_regular"
+            android:background="@drawable/custom_card2"
+            android:visibility="gone"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/startBtn"
+            android:layout_width="150dp"
+            android:layout_height="62dp"
+            android:layout_below="@+id/timerText"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/royal"
+            android:text="@string/start"
+            android:elevation="8dp"
+            app:cornerRadius = "5dp"
+            android:textAllCaps="false"
+            android:layout_marginHorizontal="5dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/quattrocento_sans_regular"
+            android:textColor="@color/seaShell"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/resetBtn"
+            android:layout_width="150dp"
+            android:layout_height="62dp"
+            android:text="@string/reset"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/royal"
+            android:fontFamily="@font/quattrocento_sans_regular"
+            app:cornerRadius = "5dp"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:layout_marginHorizontal="5dp"
+            android:textColor="@color/seaShell"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+</LinearLayout>

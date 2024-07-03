@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/Dawn"
+    android:orientation="vertical"
+    tools:context=".HelpFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardBackgroundColor="@color/Dawn"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/playfair_display"
+                android:text="Welcome to ProjectStudy"
+                android:textAlignment="center"
+                android:textColor="@color/royal"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_gravity="left"
+                android:background="@color/royal"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/quattrocento_sans_regular"
+                android:padding="5dp"
+                android:text="@string/introduction"
+                android:textAlignment="textStart"
+                android:textColor="@color/midnight"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginBottom="5dp"
+        android:elevation="3dp"
+        app:cardBackgroundColor="@color/porcelain"
+        app:cardCornerRadius="3dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/porcelain"
+            android:elevation="0dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/faq_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/porcelain"
+                    android:fontFamily="@font/quattrocento_sans_regular"
+                    android:foreground="@drawable/custom_card2"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="FAQs"
+                    android:textColor="@color/midnight"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:drawableRightCompat="@drawable/baseline_keyboard_arrow_down_24" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/faq_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    app:cardBackgroundColor="@color/porcelain"
+                    app:cardElevation="0dp"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/quattrocento_sans_regular"
+                            android:paddingHorizontal="5dp"
+                            android:paddingTop="5dp"
+                            android:text="Is my Data secure on ProjectStudy?"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/royal"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/playfair_display"
+                            android:paddingTop="0dp"
+                            android:paddingHorizontal="5dp"
+                            android:paddingBottom="5dp"
+                            android:text="@string/FAQ1"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/midnight"
+                            android:textSize="16sp"
+                            android:layout_marginBottom="5dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Can I use Project Study on Multiple Devices?"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/royal"
+                            android:fontFamily="@font/quattrocento_sans_regular"
+                            android:paddingHorizontal="5dp"
+                            android:paddingTop="5dp"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/FAQ2"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/midnight"
+                            android:fontFamily="@font/playfair_display"
+                            android:paddingTop="0dp"
+                            android:paddingHorizontal="5dp"
+                            android:paddingBottom="5dp"
+                            android:textSize="16sp"
+                            android:layout_marginBottom="5dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="What is the Pomodoro Timer in Project Study?"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/royal"
+                            android:fontFamily="@font/quattrocento_sans_regular"
+                            android:paddingHorizontal="5dp"
+                            android:paddingTop="5dp"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/FAQ3"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/midnight"
+                            android:fontFamily="@font/playfair_display"
+                            android:paddingTop="0dp"
+                            android:paddingHorizontal="5dp"
+                            android:paddingBottom="5dp"
+                            android:textSize="16sp"
+                            android:layout_marginBottom="5dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="How do I contact support for Project Study?"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/royal"
+                            android:fontFamily="@font/quattrocento_sans_regular"
+                            android:paddingHorizontal="5dp"
+                            android:paddingTop="5dp"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/FAQ4"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/midnight"
+                            android:fontFamily="@font/playfair_display"
+                            android:paddingTop="0dp"
+                            android:paddingHorizontal="5dp"
+                            android:paddingBottom="5dp"
+                            android:textSize="16sp"
+                            android:layout_marginBottom="5dp"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/privacy_policy_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/porcelain"
+                    android:fontFamily="@font/playfair_display"
+                    android:foreground="@drawable/custom_card2"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="Privacy Policy"
+                    android:textColor="@color/midnight"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:drawableRightCompat="@drawable/baseline_keyboard_arrow_down_24" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/privacy_policy_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/porcelain"
+                    app:cardElevation="0dp"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/playfair_display"
+                            android:padding="10dp"
+                            android:text="@string/privacy_policy_text0"
+                            android:textColor="@color/midnight"
+                            android:textSize="16sp"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1. Information We Collect:"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/royal"
+                            android:fontFamily="@font/quattrocento_sans_regular"
+                            android:paddingHorizontal="5dp"
+                            android:paddingTop="5dp"
+                            android:textStyle="bold"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/playfair_display"
+                            android:padding="10dp"
+                            android:text="@string/privacy_policy_text1"
+                            android:textColor="@color/midnight"
+                            android:textSize="16sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2. How We Use Your Information:"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/royal"
+                            android:fontFamily="@font/quattrocento_sans_regular"
+                            android:paddingHorizontal="5dp"
+                            android:paddingTop="5dp"
+                            android:textStyle="bold"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/playfair_display"
+                            android:padding="10dp"
+                            android:text="@string/privacy_policy_text2"
+                            android:textColor="@color/midnight"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3. Sharing Your Information"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/royal"
+                            android:fontFamily="@font/quattrocento_sans_regular"
+                            android:paddingHorizontal="5dp"
+                            android:paddingTop="5dp"
+                            android:textStyle="bold"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="\n3.1 Third-Party Service Providers"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/royal"
+                            android:fontFamily="@font/quattrocento_sans_regular"
+                            android:paddingHorizontal="5dp"
+                            android:paddingTop="5dp"
+                            android:textStyle="bold"
+                            android:textSize="16sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/playfair_display"
+                            android:padding="10dp"
+                            android:text="@string/privacy_policy_text3.1"
+                            android:textColor="@color/midnight"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3.2 Legal Compliance"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/royal"
+                            android:fontFamily="@font/quattrocento_sans_regular"
+                            android:paddingHorizontal="5dp"
+                            android:paddingTop="5dp"
+                            android:textStyle="bold"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/playfair_display"
+                            android:padding="10dp"
+                            android:text="@string/privacy_policy_text3.2"
+                            android:textColor="@color/midnight"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="4. Security"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/royal"
+                            android:fontFamily="@font/quattrocento_sans_regular"
+                            android:paddingHorizontal="5dp"
+                            android:paddingTop="5dp"
+                            android:textStyle="bold"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/playfair_display"
+                            android:padding="10dp"
+                            android:text="@string/privacy_policy_text4"
+                            android:textColor="@color/midnight"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5. Changes to this Privacy Policy"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/royal"
+                            android:fontFamily="@font/quattrocento_sans_regular"
+                            android:paddingHorizontal="5dp"
+                            android:paddingTop="5dp"
+                            android:textStyle="bold"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/playfair_display"
+                            android:padding="10dp"
+                            android:text="@string/privacy_policy_text5"
+                            android:textColor="@color/midnight"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="6. Contact Us:"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/royal"
+                            android:fontFamily="@font/quattrocento_sans_regular"
+                            android:paddingHorizontal="5dp"
+                            android:paddingTop="5dp"
+                            android:textStyle="bold"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/playfair_display"
+                            android:padding="10dp"
+                            android:text="@string/privacy_policy_text6"
+                            android:textColor="@color/midnight"
+                            android:textSize="16sp"
+                            />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/feedback_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/porcelain"
+                    android:fontFamily="@font/playfair_display"
+                    android:foreground="@drawable/custom_card2"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="Feedback"
+                    android:textColor="@color/midnight"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:drawableRightCompat="@drawable/baseline_keyboard_arrow_down_24" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/feedback_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/porcelain"
+                    app:cardElevation="0dp"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/playfair_display"
+                            android:paddingBottom="3dp"
+                            android:paddingHorizontal="10dp"
+                            android:text="@string/feedback_text"
+                            android:textColor="@color/midnight"
+                            android:textSize="16sp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="supportprojectstudy@gmail.com"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/royal"
+                            android:fontFamily="@font/quattrocento_sans_regular"
+                            android:paddingHorizontal="10dp"
+                            android:paddingVertical="5dp"
+                            android:textStyle="bold"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/playfair_display"
+                            android:paddingHorizontal="10dp"
+                            android:text="@string/feedback_text1"
+                            android:textColor="@color/midnight"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

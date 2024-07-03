@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blueWhite">#F1F6F9</color>
+
+    <color name="royal">#334EAC</color>
+    <color name="china">#7096D1</color>
+    <color name="midnight">#081F5C</color>
+    <color name="SkyBlue">#BAD6EB</color>
+    <color name="porcelain">#EDF1F6</color>
+    <color name="Dawn">#D0E3FF</color>
+    <color name="seaShell">#FFF5EE</color>
+</resources>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "235155953454",
+    "project_id": "finalpsdatabase",
+    "storage_bucket": "finalpsdatabase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:235155953454:android:50167fea618fe7ccbdccbf",
+        "android_client_info": {
+          "package_name": "com.example.finalprojectstudyapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLH33V8_zrISb5jOxhrx9LPGtSbrMt-nQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
